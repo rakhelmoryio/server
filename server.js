@@ -46,4 +46,4 @@ app.get('/bookings/:id', async (req, res) => {
 });
 
 
-app.listen( PORT , () => console.log('Server listening));
+app.listen( PORT , () => console.log('Server listening'));
