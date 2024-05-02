@@ -45,7 +45,7 @@ app.get('/bookings/:id', async (req, res) => {
   }
 });
 
-app.get('/update/:id', async (req, res) => {
+app.get('/auth12/update/:id', async (req, res) => {
   const id = req.params.id;
   try {
     const booking = await Booking.findOne({ Booking_Id: id });
@@ -60,7 +60,7 @@ app.get('/update/:id', async (req, res) => {
 });
 
 
-app.put('/update/:id', async (req, res) => {
+app.put('/auth12/update/:id', async (req, res) => {
   const id = req.params.id;
   const newData = req.body;
 
